@@ -1,7 +1,8 @@
 import sys, os
+# ✅ Force add current working directory & parent to Python path
 sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), "futurebank"))
 
-import os
 import streamlit as st
 import numpy as np
 from futurebank.models import UserProfile, PortfolioConfig, SimulationConfig, Goal, Loan
