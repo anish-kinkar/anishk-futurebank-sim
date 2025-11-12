@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.dirname(__file__))
+
 import os
 import streamlit as st
 import numpy as np
